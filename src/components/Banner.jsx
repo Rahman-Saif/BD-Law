@@ -24,7 +24,7 @@ const Banner = () => {
           </p>
           <div className="flex gap-4">
             <button
-              className="bg-blue-600 text-white px-8 py-3 
+              className="bg-[#138545] text-white px-8 py-3 
                 rounded-md text-lg font-medium transition duration-300
                 "
             >
