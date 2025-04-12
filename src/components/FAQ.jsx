@@ -6,29 +6,29 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What areas of law do you specialize in?",
+      question: "আপনারা কোন কোন আইনি ক্ষেত্রে বিশেষজ্ঞ?",
       answer:
-        "We specialize in various areas including corporate law, family law, civil litigation, criminal defense, real estate law, and employment law. Our team of experienced attorneys provides comprehensive legal solutions across these practice areas.",
+        "আমরা কর্পোরেট আইন, পারিবারিক আইন, দেওয়ানি মামলা, ফৌজদারি মামলা, স্থাবর সম্পত্তি আইন এবং শ্রম আইনসহ বিভিন্ন ক্ষেত্রে বিশেষজ্ঞ। আমাদের অভিজ্ঞ আইনজীবী দল এই সকল ক্ষেত্রে সম্পূর্ণ আইনি সমাধান প্রদান করে থাকে।",
     },
     {
-      question: "How do I schedule a consultation?",
+      question: "কিভাবে পরামর্শের জন্য সময় নির্ধারণ করব?",
       answer:
-        "You can schedule a consultation by calling our office, filling out our online contact form, or emailing us directly. We offer both in-person and virtual consultations to accommodate your needs.",
+        "আপনি আমাদের অফিসে ফোন করে, অনলাইন ফরম পূরণ করে, অথবা সরাসরি ইমেইল করে পরামর্শের জন্য সময় নির্ধারণ করতে পারেন। আমরা আপনার সুবিধার্থে সরাসরি এবং ভার্চুয়াল উভয় ধরনের পরামর্শ প্রদান করি।",
     },
     {
-      question: "What are your fee structures?",
+      question: "আপনাদের ফি কাঠামো কেমন?",
       answer:
-        "Our fee structures vary depending on the type of case and services required. We offer flexible payment plans, flat-rate services for certain matters, and hourly billing options. During your initial consultation, we'll discuss the most appropriate fee structure for your case.",
+        "আমাদের ফি কাঠামো মামলার ধরন এবং প্রয়োজনীয় সেবার উপর নির্ভর করে। আমরা নমনীয় পেমেন্ট প্ল্যান, নির্দিষ্ট বিষয়ে ফ্ল্যাট রেট সেবা এবং ঘণ্টাভিত্তিক বিলিং অপশন প্রদান করি। প্রাথমিক পরামর্শের সময় আমরা আপনার মামলার জন্য উপযুক্ত ফি কাঠামো নিয়ে আলোচনা করব।",
     },
     {
-      question: "How long does a typical case take?",
+      question: "একটি সাধারণ মামলা শেষ হতে কত সময় লাগে?",
       answer:
-        "The duration of a case varies significantly depending on its complexity, the parties involved, and court schedules. During your consultation, we can provide a more specific timeline based on your particular situation.",
+        "মামলার সময়সীমা এর জটিলতা, সংশ্লিষ্ট পক্ষসমূহ এবং আদালতের সময়সূচীর উপর নির্ভর করে পরিবর্তিত হয়। পরামর্শের সময় আমরা আপনার নির্দিষ্ট পরিস্থিতি বিবেচনা করে একটি সুনির্দিষ্ট সময়সীমা প্রদান করতে পারব।",
     },
     {
-      question: "Do you offer emergency legal services?",
+      question: "আপনারা কি জরুরি আইনি সেবা প্রদান করেন?",
       answer:
-        "Yes, we provide emergency legal services for urgent matters. Our team is available 24/7 for critical situations that require immediate legal attention.",
+        "হ্যাঁ, আমরা জরুরি বিষয়ে আইনি সেবা প্রদান করি। আমাদের দল তাৎক্ষণিক আইনি মনোযোগ প্রয়োজন এমন জরুরি পরিস্থিতির জন্য ২৪/৭ উপলব্ধ।",
     },
   ];
 
@@ -36,11 +36,9 @@ const FAQ = () => {
     <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Frequently Asked Question
-          </h2>
+          <h2 className="text-3xl font-bold text-[#138545]">সচরাচর জিজ্ঞাসা</h2>
           <p className="mt-4 text-lg text-gray-600">
-            Find Answers to common questions about our services{" "}
+            আমাদের সেবা সম্পর্কিত সাধারণ প্রশ্নের উত্তর খুঁজুন
           </p>
         </div>
         <div className="space-y-4">
@@ -80,12 +78,14 @@ const FAQ = () => {
                   activeIndex === index ? "block" : "hidden"
                 }`}
               >
-                <p className="text-gray-600">{faq.answer}</p>
+                <p className="text-[#138545]">{faq.answer}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
+      <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+      <script src="https://files.bpcontent.cloud/2025/02/02/15/20250202155627-HZTE2PYM.js"></script>
     </div>
   );
 };

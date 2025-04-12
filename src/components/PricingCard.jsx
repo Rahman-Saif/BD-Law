@@ -3,42 +3,42 @@ import React from "react";
 const PricingCard = () => {
   const plans = [
     {
-      name: "Basic Plan",
-      price: "199",
+      name: "বেসিক প্ল্যান",
+      price: "১৯৯",
       features: [
-        "Initial Legal Consultation",
-        "Basic Document Review",
-        "Phone Support",
-        "Single Case Management",
-        "Monthly Updates",
+        "প্রাথমিক আইনি পরামর্শ",
+        "মৌলিক ডকুমেন্ট পর্যালোচনা",
+        "ফোন সাপোর্ট",
+        "একক মামলা ব্যবস্থাপনা",
+        "মাসিক আপডেট",
       ],
       isPopular: false,
     },
     {
-      name: "Professional",
-      price: "399",
+      name: "প্রফেশনাল",
+      price: "৩৯৯",
       features: [
-        "Everything in Basic",
-        "Priority Consultation",
-        "Advanced Document Review",
-        "24/7 Phone Support",
-        "Multiple Case Management",
-        "Weekly Updates",
-        "Legal Research Access",
+        "বেসিক প্ল্যানের সবকিছু",
+        "অগ্রাধিকার পরামর্শ",
+        "উন্নত ডকুমেন্ট পর্যালোচনা",
+        "২৪/৭ ফোন সাপোর্ট",
+        "একাধিক মামলা ব্যবস্থাপনা",
+        "সাপ্তাহিক আপডেট",
+        "আইনি গবেষণা অ্যাক্সেস",
       ],
       isPopular: true,
     },
     {
-      name: "Enterprise",
-      price: "899",
+      name: "এন্টারপ্রাইজ",
+      price: "৮৯৯",
       features: [
-        "Everything in Professional",
-        "Dedicated Legal Team",
-        "Unlimited Consultations",
-        "Complete Documentation",
-        "Emergency Support",
-        "Daily Updates",
-        "Corporate Legal Coverage",
+        "প্রফেশনাল প্ল্যানের সবকিছু",
+        "নিবেদিত আইনি টিম",
+        "অসীম পরামর্শ সুবিধা",
+        "সম্পূর্ণ ডকুমেন্টেশন",
+        "জরুরি সহায়তা",
+        "দৈনিক আপডেট",
+        "কর্পোরেট আইনি কভারেজ",
       ],
       isPopular: false,
     },
@@ -48,9 +48,9 @@ const PricingCard = () => {
     <div className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 ">Pricing Plans</h2>
+          <h2 className="text-3xl font-bold text-[#138545] ">মূল্য তালিকা</h2>
           <p className="mt-4 text-lg text-gray-600">
-            Choose the perfect plan for your legal needs
+            আপনার আইনি প্রয়োজন অনুযায়ী সর্বোত্তম প্ল্যান বেছে নিন
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -58,11 +58,11 @@ const PricingCard = () => {
             <div
               key={index}
               className={`bg-white rounded-xl shadown-lg p-8 relative ${
-                plan.isPopular ? "border-2 border-blue-500" : ""
+                plan.isPopular ? "border-2 border-[#138545]" : ""
               }`}
             >
               {plan.isPopular && (
-                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm">
+                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#138545] text-white px-4 py-1 rounded-full text-sm">
                   Most Popular
                 </span>
               )}
@@ -99,12 +99,12 @@ const PricingCard = () => {
                 className={`w-full py-3 px-6 rounded-lg font-medium 
                 transition duration-300 ${
                   plan.isPopular
-                    ? "bg-blue-600 text-white "
+                    ? "bg-[#138545] text-white "
                     : "bg-gray-100 text-gray-900"
                 }
                 `}
               >
-                Pick This Package
+                এই প্যাকেজটি নিন
               </button>
             </div>
           ))}
